@@ -1,0 +1,36 @@
+<html>
+<head>
+<title>CR Lab - Watch a Video</title>
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css"
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+<style>
+    body {
+        animation: fadeInAnimation ease 3s;
+        animation-iteration-count: 1;
+        animation-fill-mode: forwards;
+    }
+    h1 {
+        color: rgb(42, 236, 194);
+    }
+    @keyframes fadeInAnimation{
+        0% {
+            opacity: 0;
+        }
+        100% {
+            opacity: 1;
+        }
+    }
+</style>
+</head>
+<p><h1 align="center">CR Lab - Watch a Video</h1></p>
+<div class="container">
+<div class="row">
+    <h2>Video displayed below</h2>
+    <video width="500" height="300" controls>
+        <source src={{ url_for('static', filename="IMG_2925.mp4") }} type="video/mp4">
+        Your browser does not support the video tag.
+    </video>
+</div>
+</div>
+</body>
+</html>

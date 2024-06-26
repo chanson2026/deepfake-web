@@ -1,0 +1,46 @@
+<html>
+<head>
+<title>CR Lab - Select Video Based on Image</title>
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css"
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+<style>
+    body {
+        animation: fadeInAnimation ease 3s;
+        animation-iteration-count: 1;
+        animation-fill-mode: forwards;
+    }
+    h1 {
+        color: rgb(42, 236, 194);
+    }
+    @keyframes fadeInAnimation{
+        0% {
+            opacity: 0;
+        }
+        100% {
+            opacity: 1;
+        }
+    }
+</style>
+</head>
+<p><h1 align="center">CR Lab - Image Selection</h1></p>
+<div class="container">
+<div class="row">
+    <h2>Image choices displayed below</h2>
+    <form id="package_form" action="" method="post">
+        <img src={{ url_for('static', filename="thispersondoesnotexist-2.jpg")}} type="image/jpg width="350" height="250">
+        <div class="panel-body">
+            <input type ="submit" name="action" value="Select Image01">
+        </div>
+        <img src={{ url_for('static', filename="thispersondoesnotexist-1.jpg")}} type="image/jpg width="350" height="250">
+        <div class="panel-body">
+            <input type ="submit" name="action" value="Select Image02">
+        </div>
+        <img src={{ url_for('static', filename="thispersondoesnotexist.jpg")}} type="image/jpg width="350" height="250">
+        <div class="panel-body">
+            <input type ="submit" name="action" value="Select Image03">
+        </div>
+   </form>
+</div>
+</div>
+</body>
+</html>

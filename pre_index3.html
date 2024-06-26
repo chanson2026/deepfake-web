@@ -1,0 +1,43 @@
+<html>
+<head>
+<title>CR Lab MVP</title>
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css"
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+<style>
+    body {
+        animation: fadeInAnimation ease 3s;
+        animation-iteration-count: 1;
+        animation-fill-mode: forwards;
+    }
+    h1 {
+        color: rgb(42, 236, 194);
+    }
+    @keyframes fadeInAnimation{
+        0% {
+            opacity: 0;
+        }
+        100% {
+            opacity: 1;
+        }
+    }
+</style>
+</head>
+<p><h1 align="center">CR Lab MVP</h1></p>
+<div class="container">
+<div class="row">
+    <h2>Click below to make a selection</h2>
+    <form id="package_form" action="" method="post">
+        <div class="panel-body">
+            <input type ="submit" name="action" value="Upload Image">
+        </div>
+        <div class="panel-body">
+            <input type ="submit" name="action" value="See Base Video">
+        </div>
+        <div class="panel-body">
+            <input type ="submit" name="action" value="Choose Image to Manipulate">
+        </div>
+   </form>
+</div>
+</div>
+</body>
+</html>
